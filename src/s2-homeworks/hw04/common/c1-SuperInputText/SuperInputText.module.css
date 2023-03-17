@@ -1,0 +1,25 @@
+.input:focus {
+}
+
+.input {
+}
+
+.inputWrapper {
+}
+
+.superInput {
+    border-color: #33d008
+}
+
+.errorInput {
+    border-color: #cc0000;
+}
+
+.errorInput:focus {
+
+}
+
+.error {
+    color: #cc0000;
+}
+

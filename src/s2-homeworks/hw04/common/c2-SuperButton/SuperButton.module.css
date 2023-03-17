@@ -1,0 +1,43 @@
+.button {
+    border-width: thick;
+    border-color: greenyellow;
+}
+
+.disabled {
+    border-width: thick;
+    border-color: dimgrey;
+}
+
+.secondary {
+}
+
+.default {
+}
+
+.red {
+    border-width: thick;
+    border-color: red;
+}
+
+.default:hover {
+}
+
+.red:hover {
+    border-color: darkred;
+}
+
+.secondary:hover {
+}
+
+
+.default:active {
+}
+
+.secondary:active {
+}
+
+.red:active {
+}
+
+.button:disabled {
+}
