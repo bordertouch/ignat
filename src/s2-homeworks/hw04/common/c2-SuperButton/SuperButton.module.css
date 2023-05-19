@@ -9,6 +9,8 @@
 }
 
 .secondary {
+    border-width: thick;
+    border-color: #d25b5b;
 }
 
 .default {

@@ -1,5 +1,5 @@
 import React, {FC} from 'react'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useLocation} from 'react-router-dom'
 import s from './Sidebar.module.css'
 import {PATH} from '../Pages'
 import closeIcon from './closeOutline.svg'
@@ -12,6 +12,16 @@ type PropsType = {
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
+
+    const location = useLocation()
+    const currentPath = location.pathname
+
+    const pageName =
+        currentPath === PATH.PRE_JUNIOR ? 'Pre-junior'
+            : currentPath === PATH.JUNIOR ? 'Junior'
+            : currentPath === PATH.JUNIOR_PLUS ? 'Junior Plus'
+                : 'Error'
+
     return (
         <>
             {/*затемнение справа от открытого меню*/}
@@ -31,9 +41,9 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
-                        className={s.active} // делает студент
+                        className={pageName === PATH.PRE_JUNIOR ? s.active : ''} // делает студент
                     >
-                        Pre-juniorrrrr
+                        Pre-junior
                     </NavLink>
                     <NavLink
                         id={'hw5-junior-link'}
