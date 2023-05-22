@@ -1,17 +1,28 @@
 .message {
-
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 345px;
 }
 
 .imageAndText {
-
+    display: flex;
+    align-self: flex-end;
 }
 
 .imageAndText img {
+    height: 75px;
+    width: 75px;
+    margin: 5px;
 
 }
 
 .text {
-
+    align-self: flex-end;
+    background-color: #0066cc;
+    color: white;
+    border: 6px solid #0066cc;
+    border-radius: 10px;
 }
 
 .text:after {
@@ -27,5 +38,6 @@
 }
 
 .time {
-
+    align-self: flex-end;
+    margin-right: 26px;
 }
