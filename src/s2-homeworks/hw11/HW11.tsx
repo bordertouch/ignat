@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react'
+import React, {useState} from 'react'
 import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
 import { restoreState } from '../hw06/localStorage/localStorage'
@@ -47,7 +47,7 @@ function HW11() {
                         <span id={'hw11-value-1'} className={s.number}>{value1}</span>
                         <SuperRange
                             id={'hw11-double-slider'}
-                            value={value2}
+                            value={[value1, value2]}
                             onChange={change}
                             min={0}
                             max={100}
