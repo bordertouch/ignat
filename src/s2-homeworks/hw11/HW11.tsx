@@ -48,7 +48,6 @@ function HW11() {
                             id={'hw11-double-slider'}
                             value={[value1, value2]}
                             onChange={change}
-                            disableSwap
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
