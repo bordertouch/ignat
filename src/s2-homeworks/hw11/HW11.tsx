@@ -37,8 +37,7 @@ function HW11() {
                             id={'hw11-single-slider'}
                             value={value1}
                             onChange={change}
-                            min={0}
-                            max={100}
+
                             // сделать так чтоб value1 изменялось // пишет студент
 
                         />
@@ -49,8 +48,7 @@ function HW11() {
                             id={'hw11-double-slider'}
                             value={[value1, value2]}
                             onChange={change}
-                            min={0}
-                            max={100}
+                            disableSwap
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
