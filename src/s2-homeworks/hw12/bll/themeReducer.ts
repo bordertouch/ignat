@@ -6,7 +6,6 @@ export type StateType = typeof initState
 type ChangeThemeType = {type: 'SET_THEME_ID', id: number}
 
 export const themeReducer = (state: StateType = initState, action: ChangeThemeType): StateType => { // fix any
-    debugger
     switch (action.type) {
         case "SET_THEME_ID":
             return {...state, themeId: action.id}
